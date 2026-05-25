@@ -1,6 +1,6 @@
 {
   "name": "@john95ac/pi-sound-notify-custom",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Sound notifications for Pi Coding Agent — play .wav on events with random/sequential modes",
   "main": "index.ts",
   "types": "index.ts",
@@ -42,6 +42,5 @@
   "engines": {
     "node": ">=20"
   },
-    "postinstall": "node scripts/setup-sounds.js"
-  }
+  "postinstall": "node scripts/setup-sounds.js"
 }

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2] - 2026-05-25
+
+### Fixed
+- Postinstall error handling: try/catch around file copy operations
+- Exit code 1 when file copy fails with detailed error report
+- Better error visibility for users with restricted permissions
+
 ## [1.0.0] - 2026-05-21
 
 ### Added

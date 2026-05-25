@@ -16,10 +16,17 @@ function ensureDir(dir) {
   }
 }
 
+const errors = [];
+
 function copyIfMissing(src, dest) {
   if (!fs.existsSync(dest)) {
-    fs.copyFileSync(src, dest);
-    console.log(`[pi-sound-notify-custom] Copied: ${path.relative(pkgRoot, src)} → ${dest}`);
+    try {
+      fs.copyFileSync(src, dest);
+      console.log(`[pi-sound-notify-custom] Copied: ${path.basename(src)}`);
+    } catch (err) {
+      console.error(`[pi-sound-notify-custom] ERROR copying ${path.basename(src)}: ${err.message}`);
+      errors.push({ file: path.basename(src), error: err.message });
+    }
   }
 }
 
@@ -65,6 +72,15 @@ if (fs.existsSync(skillMdSrc)) {
   ensureDir(skillDestDir);
   const skillMdDest = path.join(skillDestDir, "SKILL.md");
   copyIfMissing(skillMdSrc, skillMdDest);
+}
+
+if (errors.length > 0) {
+  console.error(`\n[pi-sound-notify-custom] ${errors.length} file(s) failed to copy:`);
+  for (const e of errors) {
+    console.error(`  - ${e.file}: ${e.error}`);
+  }
+  console.error("[pi-sound-notify-custom] The plugin may not work correctly.\n");
+  process.exit(1);
 }
 
 console.log("[pi-sound-notify-custom] Postinstall complete.");
