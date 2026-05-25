@@ -1,0 +1,47 @@
+{
+  "name": "@john95ac/pi-sound-notify-custom",
+  "version": "1.0.0",
+  "description": "Sound notifications for Pi Coding Agent — play .wav on events with random/sequential modes",
+  "main": "index.ts",
+  "types": "index.ts",
+  "pi": {
+    "extensions": [
+      "index.ts"
+    ],
+    "skills": [
+      "skills"
+    ]
+  },
+  "keywords": [
+    "pi",
+    "pi-extension",
+    "pi-package",
+    "sound",
+    "notifications",
+    "wav"
+  ],
+  "files": [
+    "index.ts",
+    "sound",
+    "sounds.json",
+    "skills",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "John1995ac <john95ac@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/John95ac/pi-sound-notify-custom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/John95ac/pi-sound-notify-custom/issues"
+  },
+  "homepage": "https://github.com/John95ac/pi-sound-notify-custom#readme",
+  "engines": {
+    "node": ">=20"
+  },
+    "postinstall": "node scripts/setup-sounds.js"
+  }
+}

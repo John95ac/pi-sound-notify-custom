@@ -1,0 +1,135 @@
+{
+  "enabled": true,
+  "creator": "John95ac",
+  "album": "Basic",
+  "album_emoji": "🎵",
+  "album_visible": true,
+  "events": {
+    "session_start": {
+      "mode": "random",
+      "sounds": [
+        "Basic/miau-PDA.wav",
+        "Basic/finger-snap.wav",
+        "Basic/gameplay-recover-hp.wav"
+      ]
+    },
+    "agent_end": {
+      "mode": "single",
+      "sounds": [
+        "Basic/ding-small-bell-sfx.wav"
+      ]
+    },
+    "tool_execution_error": {
+      "mode": "single",
+      "sounds": [
+        "Basic/robot_talk.wav"
+      ]
+    },
+    "after_provider_response": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "agent_start": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "before_agent_start": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "before_provider_request": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "context": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "input": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "message_end": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "message_start": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "message_update": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "model_select": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "resources_discover": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "session_before_compact": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "session_before_fork": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "session_before_switch": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "session_compact": {
+      "mode": "single",
+      "sounds": [
+        "Basic/gameplay-recover-hp.wav"
+      ]
+    },
+    "session_shutdown": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "session_switch": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "session_tree": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "thinking_level_select": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "tool_call": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "tool_execution_start": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "tool_execution_update": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "tool_result": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "turn_end": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "turn_start": {
+      "mode": "disabled",
+      "sounds": []
+    },
+    "user_bash": {
+      "mode": "disabled",
+      "sounds": []
+    }
+  }
+}
