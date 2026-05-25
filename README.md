@@ -14,9 +14,9 @@ I built this because working in silence sucks. Sound feedback tells you when Pi 
 
 ---
 
-## Example
+## Video Presentation
 
-<video src="assets/pi-sound-notify-custom.mp4" controls width="100%"></video>
+https://github.com/user-attachments/assets/9640d532-82e9-4c4d-a1f9-c6093202626d
 
 ---
 
